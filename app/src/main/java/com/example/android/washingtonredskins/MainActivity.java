@@ -9,14 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    MediaPlayer mySound;
-    Button button;
-
-    public void playSound(View view) {
-        mySound.start();
-        Toast.makeText(MainActivity.this, "southpark.cc.com",
-                Toast.LENGTH_LONG).show();
-    }
+    private MediaPlayer mySound;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +22,14 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                playSound();
             }
         });
-
-
     }
 
+    private void playSound() {
+        mySound.start();
+        Toast.makeText(MainActivity.this, "southpark.cc.com",
+                Toast.LENGTH_LONG).show();
+    }
 }
