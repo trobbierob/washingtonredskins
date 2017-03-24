@@ -3,7 +3,7 @@
     <string name="name">Eric Cartman</string>
     <string name="title">"CEO, Co-Founder"</string>
     <string name="address">South Park, CO</string>
-    <string name="button">For More Info</string>
+    <string name="button">More Info</string>
     <string name="quote">\"Our goal is to not do anything
         and make money not doing it\"</string>
 </resources>
