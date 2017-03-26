@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Play sound
     private void playSound() {
         mySound.start();
         Toast.makeText(MainActivity.this, "southpark.cc.com",
